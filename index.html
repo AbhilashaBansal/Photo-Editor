@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="">
+          <img src="./Images/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="logo">
+          Photo Editor
+        </a>
+    </nav>
+
+    <div>
+    <div class="container">
+        <div class="row">
+
+            <div class="image-editor col-sm-8">
+                <canvas id="editor"></canvas>
+            </div>
+            <div class="tool-bar col-sm-4" id="tool-bar">
+                <button class="btn" id="upload">Upload Image</button>
+                <br>
+                <input type="text" name="file-name" id="file-name" placeholder="Enter valid file name ...">
+                <br>
+                <button class="btn" id="save">Save Image</button>
+                <br><br>
+                <button class="btn" id="flip-hor">Flip Horizontally</button>
+                <br>
+                <button class="btn" id="flip-ver">Flip Vertically</button>
+                <br><br>
+                <button class="btn" id="rotate-right">Rotate Right</button>
+                <br>
+                <button class="btn" id="rotate-left">Rotate Left</button>
+                <br><br>
+                <button class="btn" id="grayscale">Convert to Grayscale</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
